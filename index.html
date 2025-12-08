@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Unison: A Fully Automatic, Task-Universal, and Low-Cost Framework for Unified Understanding and Generation">
+  <meta name="keywords" content="Multimodal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unison: A Fully Automatic, Task-Universal, and Low-Cost Framework for Unified Understanding and Generation</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Unison: A Fully Automatic, Task-Universal, and Low-Cost Framework for Unified Understanding and Generation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://shihaozhaozsh.github.io/">Shihao Zhao</a><sup>*</sup><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=a40b6HQAAAAJ">Yitong Chen</a><sup>*</sup><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=JzE96nQAAAAJ&hl=zh-CN">Zeyinzi Jiang</a><sup>*</sup><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.fi/citations?user=QrMKIkEAAAAJ&hl=en">Bojia Zi</a><sup>4</sup>,</span>
+            <span class="author-block">
+              <a href="https://haoosz.github.io/">Shaozhe Hao</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=8zksQb4AAAAJ&hl=zh-CN">Yu Liu</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://maochaojie.github.io/">Chaojie Mao</a><sup>2&dagger;</sup>,</span>
+            <span class="author-block">
+              <a href="https://i.cs.hku.hk/~kykwong/">Kwan-Yee K. Wong</a><sup>1&dagger;</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Hong Kong,</span>
+			      <span class="author-block"><sup>2</sup>Tongyi Lab,</span>
+            <p><span class="author-block"><sup>3</sup>Fudan University</span>
+            <span class="author-block"><sup>4</sup>The Chinese University of Hong Kong</span></p>
+            <p><span style="font-size: 0.8em"><sup>*</sup>Equal contribution,<sup> &dagger;</sup>Corresponding Author</span></p>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="xxxx"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="xxxx"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <!-- <div class="container"> -->
+
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-four-fifths"> -->
+      <div class="column is-full-width">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            Unison is a two-stage framework for unified understanding and generation tasks. Trained at minimal cost with only 500K samples and 50 GPU hours, Unison supports a wide range of understanding tasks across text, image, and video, as well as generation tasks including text-to-visual generation, editing, controllable generation, and IP-based reference generation, totaling 12 types of tasks. Notably, Unison can automatically parse user intention, identify task types, and extract necessary meta-information, enabling full automation of multimodal workflows without human intervention.
+          </p>
+          </div>
+            <img src="./static/images/introduction_comparison.png" alt="pipeline" style="width:100%; ">
+          <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Pipeline. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <br />
+        <h2 class="title is-3">Pipeline</h2>
+        <img src="./static/images/framework_design_and_training.png" alt="pipeline" style="width:100%; ">
+        <div class="content has-text-justified">
+          <p>
+            Unison adopts a two-stage approach. In stage one, a pre-trained VLM is utilized for understanding, which is referred to as the understanding model. In stage two, a pre-trained generative model is employed for content generation, which is referred to as the generation model. Specifically, to achieve full automation, we construct planning data to fine-tune the understanding model using LoRA, enabling it to decouple the task and parameter information from user inputs. If the instruction is classified as an understanding task, the output of the stage-one understanding model is directly used as the final result. If the instruction is classified as a generation task, the decoupled information forms the hyper-parameters for the stage-two generation model to drive the generation process. To enhance cross-stage integration, we further leverage a trainable projector module to bridge the understanding and generation models for better alignment.
+          </p>
+        </div>
+        <img src="./static/images/task_definition.png" alt="pipeline" style="width:100%; ">
+      </div>
+    </div>
+
+
+    <!-- Evaluation. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="container is-max-desktop">
+        <br />
+        <h2 class="title is-3">Visualization Results</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            For stage one, we adopted Qwen2.5-VL-3B-Instruct as the understanding model. For stage two, we employed Wan2.1-VACE-1.3B as the generation model. We trained a LoRA for the stage-one model and a projector for the stage-two model to align it with the stage-one model. The entire training utilized 500K data samples and was completed within 50 GPU hours.
+          </p>
+          <p>
+            In each figure, the top three cases demonstrate the model’s understanding of text, image, and video inputs. Here, the green boxes contain user inputs, while the blue boxes display the corresponding outputs. The lower cases illustrate tasks related to image and video generation. The leftmost section shows user inputs, where green boxes contain textual prompts, and content to the left of these boxes represents image, video, or mask conditions. The middle blue boxes present outputs from the stage-one model, which primarily consist of signal tokens guiding the generation tasks of the stage-two model. The right side displays the final generated results.
+          </p>
+        </div>
+        <div style="text-align: center; margin-bottom: 40px;">
+          <p>Visualization Results - Figure 1</p>
+          <img src="./static/images/results-1.png" alt="evaluation1" style="width:100%; ">
+        </div>
+        <div style="text-align: center; margin-bottom: 40px;">
+          <p>Visualization Results - Figure 2</p>
+          <img src="./static/images/results-2.png" alt="evaluation1" style="width:100%; ">
+        </div>
+        <div style="text-align: center; margin-bottom: 40px;">
+          <p>Visualization Results - Figure 3</p>
+          <img src="./static/images/results-3.png" alt="evaluation1" style="width:100%; ">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+	@article{zhao2025unison,
+	  title={Unison: A Fully Automatic, Task-Universal, and Low-Cost Framework for Unified Understanding and Generation},
+	  author={Shihao Zhao, Yitong Chen, Zeyinzi Jiang, Bojia Zi, Shaozhe Hao, Yu Liu, Chaojie Mao, Kwan-Yee~K.},
+	  journal={xxxx},
+	  year={2025}
+	}
+    </code></pre>
+  </div>
+</section>
+
+
+
+</body>
+</html>
